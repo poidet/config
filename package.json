@@ -1,0 +1,33 @@
+{
+	"private": true,
+	"type": "module",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"lint": "eslint --fix  \"**/*.{cjs, json}\"",
+		"test": "pnpm lint && vitest run",
+		"release": "pnpm test && pnpm publish -r"
+	},
+	"devDependencies": {
+		"@poidet/editorconfig": "workspace:^",
+		"@poidet/eslint-config": "workspace:^",
+		"@poidet/prettier": "workspace:^",
+		"eslint": "^8.49.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^14.0.1",
+		"prettier": "^3.0.3",
+		"vitest": "^0.34.4"
+	},
+	"packageManager": "pnpm@8.7.0",
+	"lint-staged": {
+		"**/*.(ts|vue|js)": [
+			"eslint --fix",
+			"git add"
+		],
+		"**/*.*": [
+			"prettier -c -u --write",
+			"git add"
+		]
+	}
+}

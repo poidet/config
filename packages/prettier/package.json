@@ -1,0 +1,36 @@
+{
+	"name": "@poidet/prettier",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Конфигурация Prettier",
+	"author": {
+		"url": "https://taknepoidet.xyz",
+		"email": "TakNePoidet@yandex.ru",
+		"name": "Yakin Nikita"
+	},
+	"license": "MIT",
+	"main": "index.cjs",
+	"exports": {
+		".": "./index.cjs"
+	},
+	"keywords": [
+		"prettier"
+	],
+	"files": [
+		"index.cjs"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/poidet/poidet.git",
+		"directory": "packages/prettier"
+	},
+	"scripts": {
+		"release": "changelogen --release"
+	},
+	"peerDependencies": {
+		"prettier": "^3.0.3"
+	},
+	"devDependencies": {
+		"changelogen": "^0.5.5"
+	}
+}
