@@ -1,0 +1,44 @@
+{
+	"name": "@poidet/eslint-nuxt-config",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Конфигурация ESLint для Nuxt",
+	"author": {
+		"url": "https://taknepoidet.xyz",
+		"email": "TakNePoidet@yandex.ru",
+		"name": "Yakin Nikita"
+	},
+	"license": "MIT",
+	"main": "index.cjs",
+	"exports": {
+		".": "./index.cjs"
+	},
+	"keywords": [
+		"eslint",
+		"eslint-config"
+	],
+	"files": [
+		"index.cjs"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/poidet/config.git",
+		"directory": "packages/eslint-nuxt-config"
+	},
+	"scripts": {
+		"release": "changelogen --release"
+	},
+	"dependencies": {
+		"@poidet/eslint-config": "*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^8.44.2"
+	},
+	"peerDependencies": {
+		"eslint": "^8.48.0"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}
