@@ -29,7 +29,7 @@
 		"release": "changelogen --release"
 	},
 	"dependencies": {
-		"@poidet/prettier": "workspace:^",
+		"@poidet/prettier": "^0.1.0",
 		"@rushstack/eslint-patch": "^1.3.3",
 		"@typescript-eslint/eslint-plugin": "^6.7.0",
 		"@typescript-eslint/parser": "^6.7.0",
@@ -48,5 +48,9 @@
 	},
 	"peerDependencies": {
 		"eslint": "^8.48.0"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
 	}
 }

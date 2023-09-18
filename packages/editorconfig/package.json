@@ -23,5 +23,9 @@
 		"type": "git",
 		"url": "https://github.com/poidet/config.git",
 		"directory": "packages/editorconfig"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
 	}
 }
