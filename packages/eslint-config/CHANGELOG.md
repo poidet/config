@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/poidet/config/compare/v0.1.2...v0.1.3) (2023-09-18)
+
+### Bug Fixes
+
+- **eslint-config:** Version @typescript-eslint/parser ([f7aca53](https://github.com/poidet/config/commit/f7aca5337004b64608ddf08c50c6275daef4e5c1))
+
 ## [0.1.2](https://github.com/poidet/config/compare/v0.1.1...v0.1.2) (2023-09-18)
 
 ### Bug Fixes
