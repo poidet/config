@@ -7,6 +7,7 @@
 	"scripts": {
 		"lint": "eslint --fix  \"**/*.{cjs, json}\"",
 		"test": "pnpm lint && vitest run",
+		"update": "ncu -u",
 		"release": "pnpm test && lerna publish --conventional-commits"
 	},
 	"devDependencies": {
