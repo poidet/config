@@ -5,11 +5,11 @@
 Добавьте пакет в свои dev-dependencies
 
 ```bash
-npm i -D @poidet/eslint eslint
+npm i -D @poidet/eslint-config eslint
 
-yarn add -D @poidet/eslint eslint
+yarn add -D @poidet/eslint-config eslint
 
-pnpm install -D @poidet/eslint eslint
+pnpm install -D @poidet/eslint-config eslint
 ```
 
 ## Использование
@@ -21,7 +21,7 @@ pnpm install -D @poidet/eslint eslint
 ```json
 {
   "extends": [
-    "@poidet/eslint"
+    "@poidet/eslint-config"
   ]
 }
 ```

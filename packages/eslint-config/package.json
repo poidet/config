@@ -1,5 +1,5 @@
 {
-	"name": "@poidet/eslint",
+	"name": "@poidet/eslint-config",
 	"type": "module",
 	"version": "0.0.0",
 	"description": "Конфигурация ESLint",
