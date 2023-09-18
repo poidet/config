@@ -7,7 +7,7 @@
 	"scripts": {
 		"lint": "eslint --fix  \"**/*.{cjs, json}\"",
 		"test": "pnpm lint && vitest run",
-		"release": "pnpm test && pnpm publish -r"
+		"release": "pnpm test && lerna publish --conventional-commits"
 	},
 	"devDependencies": {
 		"@poidet/editorconfig": "workspace:^",
@@ -15,6 +15,7 @@
 		"@poidet/prettier": "workspace:^",
 		"eslint": "^8.49.0",
 		"husky": "^8.0.3",
+		"lerna": "^7.3.0",
 		"lint-staged": "^14.0.1",
 		"prettier": "^3.0.3",
 		"vitest": "^0.34.4"
