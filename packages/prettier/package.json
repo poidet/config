@@ -1,7 +1,7 @@
 {
 	"name": "@poidet/prettier",
 	"type": "module",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Конфигурация Prettier",
 	"author": {
 		"url": "https://taknepoidet.xyz",
