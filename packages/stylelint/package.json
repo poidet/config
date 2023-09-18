@@ -1,0 +1,43 @@
+{
+	"name": "@poidet/stylelint",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Конфигурация Stylelint",
+	"author": {
+		"url": "https://taknepoidet.xyz",
+		"email": "TakNePoidet@yandex.ru",
+		"name": "Yakin Nikita"
+	},
+	"license": "MIT",
+	"main": "index.cjs",
+	"exports": {
+		".": "./index.cjs"
+	},
+	"keywords": [
+		"stylelint"
+	],
+	"files": [
+		"index.cjs"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/poidet/config.git",
+		"directory": "packages/stylelint"
+	},
+	"peerDependencies": {
+		"stylelint": "^15.10.3"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"dependencies": {
+		"stylelint-config-html": "^1.1.0",
+		"stylelint-config-hudochenkov": "^9.0.0",
+		"stylelint-config-standard": "^34.0.0",
+		"stylelint-config-standard-scss": "^11.0.0",
+		"stylelint-order": "^6.0.3",
+		"stylelint-prettier": "^4.0.2",
+		"stylelint-selector-bem-pattern": "^3.0.1"
+	}
+}
