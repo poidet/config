@@ -1,0 +1,27 @@
+{
+	"name": "@poidet/editorconfig",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Конфигурация EditorConfig",
+	"author": {
+		"url": "https://taknepoidet.xyz",
+		"email": "TakNePoidet@yandex.ru",
+		"name": "Yakin Nikita"
+	},
+	"license": "MIT",
+	"main": ".editorconfig",
+	"exports": {
+		".": "./.editorconfig"
+	},
+	"keywords": [
+		"EditorConfig"
+	],
+	"files": [
+		".editorconfig"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/poidet/poidet.git",
+		"directory": "packages/editorconfig"
+	}
+}
