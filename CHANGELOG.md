@@ -7,7 +7,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **eslint-nuxt-config:** Init ([4beb47a](https://github.com/poidet/config/commit/4beb47a21a54bd51068553f0ee04be89752a7893))
+- **eslint-config-nuxt:** Init ([4beb47a](https://github.com/poidet/config/commit/4beb47a21a54bd51068553f0ee04be89752a7893))
 
 ## [0.1.3](https://github.com/poidet/config/compare/v0.1.2...v0.1.3) (2023-09-18)
 

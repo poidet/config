@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { ESLint } from 'eslint';
 import { describe, expect, it } from 'vitest';
 
-describe('eslint-nuxt-config', () => {
+describe('eslint-config-nuxt', () => {
 	it('Загружает конфигурацию в eslint для проверки правильности всего синтаксиса правил', async () => {
 		const cli = new ESLint({
 			useEslintrc: false,

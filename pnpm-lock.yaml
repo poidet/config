@@ -86,7 +86,7 @@ importers:
         specifier: ^0.5.5
         version: 0.5.5
 
-  packages/eslint-nuxt-config:
+  packages/eslint-config-nuxt:
     dependencies:
       '@poidet/eslint-config':
         specifier: ^0.2.0
