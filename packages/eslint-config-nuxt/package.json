@@ -1,7 +1,7 @@
 {
 	"name": "@poidet/eslint-config-nuxt",
 	"type": "module",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Конфигурация ESLint для Nuxt",
 	"author": {
 		"url": "https://taknepoidet.xyz",
@@ -29,7 +29,7 @@
 		"release": "changelogen --release"
 	},
 	"dependencies": {
-		"@poidet/eslint-config": "^0.3.0"
+		"@poidet/eslint-config": "^0.4.0"
 	},
 	"devDependencies": {
 		"@types/eslint": "^8.44.6"

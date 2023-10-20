@@ -40,7 +40,7 @@ importers:
   packages/eslint-config:
     dependencies:
       '@poidet/prettier':
-        specifier: ^0.3.0
+        specifier: ^0.4.0
         version: link:../prettier
       '@rushstack/eslint-patch':
         specifier: ^1.5.1
@@ -89,7 +89,7 @@ importers:
   packages/eslint-config-nuxt:
     dependencies:
       '@poidet/eslint-config':
-        specifier: ^0.3.0
+        specifier: ^0.4.0
         version: link:../eslint-config
       eslint:
         specifier: ^8.48.0

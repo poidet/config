@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/poidet/config/compare/v0.3.0...v0.4.0) (2023-10-20)
+
+### Features
+
+- **eslint-config:** add rule `@typescript-eslint/consistent-type-imports` ([132ac45](https://github.com/poidet/config/commit/132ac45906c8d824f47f6944607c7e8c9dd349e1))
+
 # [0.3.0](https://github.com/poidet/config/compare/v0.2.0...v0.3.0) (2023-09-18)
 
 ### Features
