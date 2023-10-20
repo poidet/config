@@ -32,7 +32,7 @@
 		"@poidet/eslint-config": "^0.3.0"
 	},
 	"devDependencies": {
-		"@types/eslint": "^8.44.2"
+		"@types/eslint": "^8.44.6"
 	},
 	"peerDependencies": {
 		"eslint": "^8.48.0"
