@@ -39,7 +39,8 @@ module.exports = {
 				// The core 'no-unused-vars' rules (in the eslint:recommended ruleset)
 				// does not work with type definitions.
 				'no-unused-vars': 'off',
-				'@typescript-eslint/no-unused-vars': 'warn'
+				'@typescript-eslint/no-unused-vars': 'warn',
+				'@typescript-eslint/consistent-type-imports': 'error'
 			}
 		},
 		{
