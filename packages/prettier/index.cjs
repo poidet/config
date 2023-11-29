@@ -15,5 +15,6 @@ module.exports = {
 	tabWidth: 2,
 	useTabs: true,
 	endOfLine: 'lf',
-	vueIndentScriptAndStyle: false
+	vueIndentScriptAndStyle: false,
+	plugins: ['@awmottaz/prettier-plugin-void-html']
 };
