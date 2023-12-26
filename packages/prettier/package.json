@@ -1,7 +1,7 @@
 {
 	"name": "@poidet/prettier",
 	"type": "module",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "Конфигурация Prettier",
 	"author": {
 		"url": "https://taknepoidet.xyz",
@@ -28,8 +28,8 @@
 		"release": "changelogen --release"
 	},
 	"peerDependencies": {
-		"prettier": "^3.0.3",
-		"@awmottaz/prettier-plugin-void-html": "^1.1.0"
+		"@awmottaz/prettier-plugin-void-html": "^1.1.0",
+		"prettier": "^3.0.3"
 	},
 	"devDependencies": {
 		"changelogen": "^0.5.5"

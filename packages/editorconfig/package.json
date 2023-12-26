@@ -1,7 +1,7 @@
 {
 	"name": "@poidet/editorconfig",
 	"type": "module",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "Конфигурация EditorConfig",
 	"author": {
 		"url": "https://taknepoidet.xyz",
