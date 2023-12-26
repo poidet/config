@@ -28,10 +28,10 @@
 		"release": "changelogen --release"
 	},
 	"peerDependencies": {
-		"prettier": "^3.0.3"
+		"prettier": "^3.0.3",
+		"@awmottaz/prettier-plugin-void-html": "^1.1.0"
 	},
 	"devDependencies": {
-		"@awmottaz/prettier-plugin-void-html": "^1.1.0",
 		"changelogen": "^0.5.5"
 	},
 	"publishConfig": {
