@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	plugins: ['stylelint-selector-bem-pattern', 'stylelint-prettier'],
 	extends: [
 		'stylelint-config-html',

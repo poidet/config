@@ -9,7 +9,7 @@
 		"name": "Yakin Nikita"
 	},
 	"license": "MIT",
-	"main": "index.cjs",
+	"main": "index.mjs",
 	"exports": {
 		".": "./index.cjs"
 	},
@@ -17,7 +17,7 @@
 		"stylelint"
 	],
 	"files": [
-		"index.cjs"
+		"index.mjs"
 	],
 	"repository": {
 		"type": "git",
