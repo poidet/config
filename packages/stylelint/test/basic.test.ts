@@ -1,14 +1,22 @@
-import stylelint, { Config } from 'stylelint';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { readFile } from 'fs/promises';
+import stylelint, { type Config } from 'stylelint';
 import { describe, expect, it } from 'vitest';
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 describe('stylelint-config', async () => {
 	it('Загружает конфигурацию в Stylelint для проверки правильности всего синтаксиса правил', async () => {
-		const config = (await import('../index.cjs')) as Config;
+		// @ts-ignore
+		const config = (await import('../index.mjs')).default as Config;
 
 		const data = await stylelint.lint({
-			config: config.default,
+			config: config,
 			fix: true,
-			code: 'body {\n' + '\tdisplay: flex;\n' + '\tline-height: 130%;\n' + '\tfont-size: 16px;\n' + '}'
+			code: await readFile(join(__dirname, './reset.scss'), {
+				encoding: 'utf-8'
+			})
 		});
 
 		expect(data.errored).toEqual(false);
