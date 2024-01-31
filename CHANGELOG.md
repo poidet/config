@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/poidet/config/compare/v0.6.2...v0.6.3) (2024-01-31)
+
+**Note:** Version bump only for package poidet
+
 ## [0.6.2](https://github.com/poidet/config/compare/v0.6.1...v0.6.2) (2024-01-12)
 
 ### Bug Fixes
