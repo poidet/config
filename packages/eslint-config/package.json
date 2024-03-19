@@ -1,7 +1,7 @@
 {
 	"name": "@poidet/eslint-config",
 	"type": "module",
-	"version": "0.6.3",
+	"version": "0.7.0",
 	"description": "Конфигурация ESLint",
 	"author": {
 		"url": "https://taknepoidet.xyz",
@@ -29,7 +29,7 @@
 		"release": "changelogen --release"
 	},
 	"dependencies": {
-		"@poidet/prettier": "^0.6.0",
+		"@poidet/prettier": "^0.7.0",
 		"@rushstack/eslint-patch": "^1.7.2",
 		"@typescript-eslint/eslint-plugin": "^7.3.1",
 		"@typescript-eslint/parser": "^7.3.1",

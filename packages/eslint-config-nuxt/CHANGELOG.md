@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/poidet/config/compare/v0.6.3...v0.7.0) (2024-03-19)
+
+### Features
+
+- **eslint-config-nuxt:** update rule ([93c4c95](https://github.com/poidet/config/commit/93c4c95e23a68219847284fa0500aacc844094d5))
+
 ## [0.6.3](https://github.com/poidet/config/compare/v0.6.2...v0.6.3) (2024-01-31)
 
 **Note:** Version bump only for package @poidet/eslint-config-nuxt
