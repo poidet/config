@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/poidet/config/compare/v0.7.0...v0.8.0) (2024-06-08)
+
+### Features
+
+- update ([fd0f037](https://github.com/poidet/config/commit/fd0f037320206fd61c350638de2dca5aeb2a2bab))
+
 # [0.7.0](https://github.com/poidet/config/compare/v0.6.3...v0.7.0) (2024-03-19)
 
 **Note:** Version bump only for package @poidet/prettier
