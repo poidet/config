@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/poidet/config/compare/v0.8.0...v0.8.1) (2024-06-08)
+
+### Bug Fixes
+
+- `.cjs` -> `.mjs` ([5982a53](https://github.com/poidet/config/commit/5982a53b4c111d2b24d481b756ad2cf494091f52))
+
 # [0.8.0](https://github.com/poidet/config/compare/v0.7.0...v0.8.0) (2024-06-08)
 
 ### Features

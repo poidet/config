@@ -1,7 +1,7 @@
 {
 	"name": "@poidet/eslint-config-nuxt",
 	"type": "module",
-	"version": "0.8.0",
+	"version": "0.8.1",
 	"description": "Конфигурация ESLint для Nuxt",
 	"author": {
 		"url": "https://taknepoidet.xyz",
