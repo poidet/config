@@ -20,6 +20,6 @@ pnpm install -D @poidet/stylelint stylelint
 
 ```javascript
 module.exports = {
-    "extends": ["@poidet/stylelint"]
-}
+	extends: ['@poidet/stylelint']
+};
 ```

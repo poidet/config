@@ -1,5 +1,5 @@
 export default {
-	plugins: ['stylelint-selector-bem-pattern', 'stylelint-prettier'],
+	plugins: ['stylelint-prettier'],
 	extends: [
 		'stylelint-config-html',
 		'stylelint-config-standard',
@@ -15,14 +15,6 @@ export default {
 		'media-query-no-invalid': null,
 		'selector-class-pattern': null,
 		'no-invalid-position-at-import-rule': null,
-		'plugin/selector-bem-pattern': {
-			componentName: '[A-Z]+',
-			componentSelectors: {
-				initial: '^\\.{componentName}(?:-[a-z]+)?$',
-				combined: '^\\.combined-{componentName}-[a-z]+$'
-			},
-			utilitySelectors: '^\\.util-[a-z]+$'
-		},
 		'order/order': [['dollar-variables', 'custom-properties', 'declarations', 'rules'], { severity: 'warning' }]
 	},
 	overrides: [

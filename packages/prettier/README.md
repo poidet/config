@@ -20,7 +20,7 @@ pnpm install -D @poidet/prettier prettier
 
 ```javascript
 module.exports = {
-    ...require('@taknepoidet-config/prettier')
+	...require('@taknepoidet-config/prettier')
 };
 ```
 

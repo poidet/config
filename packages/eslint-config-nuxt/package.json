@@ -9,10 +9,14 @@
 		"name": "Yakin Nikita"
 	},
 	"license": "MIT",
-	"main": "index.cjs",
 	"exports": {
-		".": "./index.cjs"
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.cjs"
+		}
 	},
+	"main": "./dist/index.cjs",
+	"types": "./dist/index.d.ts",
 	"keywords": [
 		"eslint",
 		"eslint-config"
@@ -26,16 +30,23 @@
 		"directory": "packages/eslint-config-nuxt"
 	},
 	"scripts": {
-		"release": "changelogen --release"
+		"build": "unbuild",
+		"dev": "npx @eslint/config-inspector --config eslint.config.ts",
+		"release": "changelogen --release",
+		"typecheck": "tsc --noEmit",
+		"prepublish": "pnpm run build",
+		"prepare": "pnpm run build"
 	},
 	"dependencies": {
-		"@poidet/eslint-config": "^0.7.0"
+		"eslint-flat-config-utils": "^0.2.5",
+		"@nuxt/eslint-config": "^0.3.13",
+		"@poidet/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"@types/eslint": "^8.56.6"
+		"unbuild": "^2.0.0"
 	},
 	"peerDependencies": {
-		"eslint": "^8.48.0"
+		"eslint": ">=8.40.0"
 	},
 	"publishConfig": {
 		"access": "public",

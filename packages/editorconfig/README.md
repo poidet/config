@@ -14,7 +14,6 @@ pnpm install -D @poidet/editorconfig
 
 ## Использование
 
-
 ```bash
 ln -s ./node_modules/@poidet/editorconfig/.editorconfig .editorconfig
 ```

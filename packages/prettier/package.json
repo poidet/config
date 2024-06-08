@@ -27,9 +27,11 @@
 	"scripts": {
 		"release": "changelogen --release"
 	},
+	"dependencies": {
+		"@awmottaz/prettier-plugin-void-html": "^1.1.0"
+	},
 	"peerDependencies": {
-		"@awmottaz/prettier-plugin-void-html": "^1.1.0",
-		"prettier": "^3.0.3"
+		"prettier": ">=3.0.0"
 	},
 	"devDependencies": {
 		"changelogen": "^0.5.5"
