@@ -8,9 +8,9 @@ describe('eslint-config-nuxt', () => {
 		const eslint = new ESLint({
 			cwd: fileURLToPath(new URL('..', import.meta.url))
 		});
-		const code = 'const foo = 1;\nconst bar = function () {}\n;bar(foo);\n';
+		const code = 'const foo = 1;\nconst bar = function () {};\n';
 		const results = await eslint.lintText(code);
-		const errors = ESLint.getErrorResults(results);
-		expect(errors.length).toEqual(0);
+		const [{ errorCount }] = ESLint.getErrorResults(results);
+		expect(errorCount).toEqual(4);
 	});
 });

@@ -45,12 +45,18 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.21.0
         version: 2.21.0(@vue/compiler-sfc@3.4.27)(eslint-plugin-format@0.1.1(eslint@9.4.0))(eslint@9.4.0)(typescript@5.4.5)(vitest@1.6.0(@types/node@20.14.2))
+      defu:
+        specifier: ^6.1.4
+        version: 6.1.4
       eslint:
         specifier: '>=8.40.0'
         version: 9.4.0
       eslint-flat-config-utils:
         specifier: ^0.2.5
         version: 0.2.5
+      eslint-plugin-prettier:
+        specifier: ^5.1.3
+        version: 5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.4.0))(eslint@9.4.0)(prettier@3.3.1)
       eslint-plugin-simple-import-sort:
         specifier: ^12.1.0
         version: 12.1.0(eslint@9.4.0)
@@ -82,12 +88,18 @@ importers:
       '@poidet/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
+      defu:
+        specifier: ^6.1.4
+        version: 6.1.4
       eslint:
         specifier: '>=8.40.0'
         version: 9.4.0
       eslint-flat-config-utils:
         specifier: ^0.2.5
         version: 0.2.5
+      eslint-plugin-import-x:
+        specifier: ^0.5.1
+        version: 0.5.1(eslint@9.4.0)(typescript@5.4.5)
     devDependencies:
       unbuild:
         specifier: ^2.0.0
@@ -2260,10 +2272,6 @@ packages:
       { integrity: sha512-N+MeXYoqr3pOgn8xfyRPREN7gHakLYjhsHhWGT3fWAiL4IkAt0iDw14QiiEm2bE30c5XX5q0FtAA3CK5f9/BUg== }
     engines: { node: '>=12' }
 
-  defu@6.1.2:
-    resolution:
-      { integrity: sha512-+uO4+qr7msjNNWKYPHqN/3+Dx3NFkmIzayk2L1MyZQlvgZb/J1A0fo410dpKrN2SnqFjt8n4JL8fDJE0wIgjFQ== }
-
   defu@6.1.4:
     resolution:
       { integrity: sha512-mEQCMmwJu317oSz8CwdIOdwf3xMif1ttiM8LTufzc3g6kR+9Pe236twL8j3IYT1F7GfRgGcW6MWxzZjLIkuHIg== }
@@ -2452,6 +2460,13 @@ packages:
     resolution:
       { integrity: sha512-hEZLwuZjDBGDERA49c2q7vxc8sCGv8EdBp6PQYzGOMcHIgrfG9YOM6s/4jx24zhD+wnK9AI8mgN5RxSss5nClQ== }
 
+  eslint-config-prettier@9.1.0:
+    resolution:
+      { integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw== }
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+
   eslint-flat-config-utils@0.2.5:
     resolution:
       { integrity: sha512-iO+yLZtC/LKgACerkpvsZ6NoRVB2sxT04mOpnNcEM1aTwKy+6TsT46PUvrML4y2uVBS6I67hRCd2JiKAPaL/Uw== }
@@ -2565,6 +2580,21 @@ packages:
       svelte-eslint-parser:
         optional: true
       vue-eslint-parser:
+        optional: true
+
+  eslint-plugin-prettier@5.1.3:
+    resolution:
+      { integrity: sha512-C9GCVAs4Eq7ZC/XFQHITLiHJxQngdtraXaM+LoUFoFp/lHNl2Zn8f3WQbe9HvTBBQ9YnKFB0/2Ajdqwo5D1EAw== }
+    engines: { node: ^14.18.0 || >=16.0.0 }
+    peerDependencies:
+      '@types/eslint': '>=8.0.0'
+      eslint: '>=8.0.0'
+      eslint-config-prettier: '*'
+      prettier: '>=3.0.0'
+    peerDependenciesMeta:
+      '@types/eslint':
+        optional: true
+      eslint-config-prettier:
         optional: true
 
   eslint-plugin-regexp@2.6.0:
@@ -5483,6 +5513,11 @@ packages:
       { integrity: sha512-Vhf+bUa//YSTYKseDiiEuQmhGCoIF3CVBhunm3r/DQnYiGT4JssmnKQc44BIyOZRK2pKjXXAgbhfmbeoC9CJpA== }
     engines: { node: '>=12.20' }
 
+  synckit@0.8.8:
+    resolution:
+      { integrity: sha512-HwOKAP7Wc5aRGYdKH+dw0PRRpbO841v2DENBtjnR5HFWoiNByAl7vrx3p0G/rCyYXQsrxqtX48TImFtPcIHSpQ== }
+    engines: { node: ^14.18.0 || >=16.0.0 }
+
   synckit@0.9.0:
     resolution:
       { integrity: sha512-7RnqIMq572L8PeEzKeBINYEJDDxpcH8JEgLwUqBd3TkofhFRbkq4QLR0u+36avGAhCRbk2nnmjcW9SE531hPDg== }
@@ -6797,8 +6832,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@pkgr/core@0.1.1':
-    optional: true
+  '@pkgr/core@0.1.1': {}
 
   '@rollup/plugin-alias@5.1.0(rollup@3.29.4)':
     dependencies:
@@ -7430,7 +7464,7 @@ snapshots:
   c12@1.4.2:
     dependencies:
       chokidar: 3.5.3
-      defu: 6.1.2
+      defu: 6.1.4
       dotenv: 16.3.1
       giget: 1.1.2
       jiti: 1.20.0
@@ -7891,8 +7925,6 @@ snapshots:
 
   define-lazy-prop@3.0.0: {}
 
-  defu@6.1.2: {}
-
   defu@6.1.4: {}
 
   delayed-stream@1.0.0: {}
@@ -8057,6 +8089,11 @@ snapshots:
       find-up: 7.0.0
       parse-gitignore: 2.0.0
 
+  eslint-config-prettier@9.1.0(eslint@9.4.0):
+    dependencies:
+      eslint: 9.4.0
+    optional: true
+
   eslint-flat-config-utils@0.2.5:
     dependencies:
       '@types/eslint': 8.56.10
@@ -8127,8 +8164,8 @@ snapshots:
       eslint-import-resolver-node: 0.3.9
       get-tsconfig: 4.7.5
       is-glob: 4.0.3
-      minimatch: 9.0.3
-      semver: 7.6.0
+      minimatch: 9.0.4
+      semver: 7.6.2
       tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
@@ -8191,6 +8228,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@9.4.0))(eslint@9.4.0)(prettier@3.3.1):
+    dependencies:
+      eslint: 9.4.0
+      prettier: 3.3.1
+      prettier-linter-helpers: 1.0.0
+      synckit: 0.8.8
+    optionalDependencies:
+      '@types/eslint': 8.56.10
+      eslint-config-prettier: 9.1.0(eslint@9.4.0)
 
   eslint-plugin-regexp@2.6.0(eslint@9.4.0):
     dependencies:
@@ -8601,7 +8648,7 @@ snapshots:
   giget@1.1.2:
     dependencies:
       colorette: 2.0.20
-      defu: 6.1.2
+      defu: 6.1.4
       https-proxy-agent: 5.0.1
       mri: 1.2.0
       node-fetch-native: 1.4.0
@@ -10287,7 +10334,7 @@ snapshots:
 
   rc9@2.1.1:
     dependencies:
-      defu: 6.1.2
+      defu: 6.1.4
       destr: 2.0.1
       flat: 5.0.2
 
@@ -10843,6 +10890,11 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
+  synckit@0.8.8:
+    dependencies:
+      '@pkgr/core': 0.1.1
+      tslib: 2.6.2
+
   synckit@0.9.0:
     dependencies:
       '@pkgr/core': 0.1.1
@@ -11002,7 +11054,7 @@ snapshots:
       chalk: 5.3.0
       citty: 0.1.6
       consola: 3.2.3
-      defu: 6.1.2
+      defu: 6.1.4
       esbuild: 0.19.10
       globby: 13.2.2
       hookable: 5.5.3

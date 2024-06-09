@@ -5,7 +5,10 @@ export function stylistic(): TypedFlatConfigItem[] {
 		{
 			name: 'poidet/stylistic',
 			rules: {
-				'style/comma-dangle': ['error', 'never']
+				'style/brace-style': ['error'],
+				'style/comma-dangle': ['error', 'never'],
+				'@stylistic/brace-style': ['error'],
+				'@stylistic/comma-dangle': ['error', 'never']
 			}
 		}
 	];

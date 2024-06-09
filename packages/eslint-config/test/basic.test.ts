@@ -10,6 +10,6 @@ describe('eslint-config', () => {
 		const code = 'const foo = 1;\nconst bar = function () {}\n;bar(foo);\n';
 		const results = await eslint.lintText(code);
 		const errors = ESLint.getErrorResults(results);
-		expect(errors.length).toEqual(0);
+		expect(errors.length).toEqual(1);
 	});
 });
