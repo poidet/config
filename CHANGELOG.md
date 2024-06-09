@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://github.com/poidet/config/compare/v0.8.1...v0.8.2) (2024-06-09)
+
+### Bug Fixes
+
+- nuxt rules ([32fdc80](https://github.com/poidet/config/commit/32fdc8064542aedf0a2fba2f92eba1ab7a6f32d5))
+
 ## [0.8.1](https://github.com/poidet/config/compare/v0.8.0...v0.8.1) (2024-06-08)
 
 ### Bug Fixes

@@ -1,7 +1,7 @@
 {
 	"name": "@poidet/eslint-config-nuxt",
 	"type": "module",
-	"version": "0.8.1",
+	"version": "0.8.2",
 	"description": "Конфигурация ESLint для Nuxt",
 	"author": {
 		"url": "https://taknepoidet.xyz",
@@ -38,9 +38,9 @@
 		"prepare": "pnpm run build"
 	},
 	"dependencies": {
-		"defu": "^6.1.4",
 		"@nuxt/eslint-config": "^0.3.13",
 		"@poidet/eslint-config": "workspace:*",
+		"defu": "^6.1.4",
 		"eslint-flat-config-utils": "^0.2.5",
 		"eslint-plugin-import-x": "^0.5.1"
 	},
