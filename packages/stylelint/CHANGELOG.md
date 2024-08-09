@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/poidet/config/compare/v0.8.3...v0.8.4) (2024-08-09)
+
+**Note:** Version bump only for package @poidet/stylelint
+
 **Note:** Version bump only for package @poidet/stylelint
 
 # [0.8.0](https://github.com/poidet/config/compare/v0.7.0...v0.8.0) (2024-06-08)
