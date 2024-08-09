@@ -38,17 +38,17 @@
 		"prepare": "pnpm run build"
 	},
 	"dependencies": {
-		"@nuxt/eslint-config": "^0.3.13",
+		"@nuxt/eslint-config": "^0.5.0",
 		"@poidet/eslint-config": "workspace:*",
 		"defu": "^6.1.4",
-		"eslint-flat-config-utils": "^0.2.5",
-		"eslint-plugin-import-x": "^0.5.1"
+		"eslint-flat-config-utils": "^0.3.0",
+		"eslint-plugin-import-x": "^3.1.0"
 	},
 	"devDependencies": {
 		"unbuild": "^2.0.0"
 	},
 	"peerDependencies": {
-		"eslint": ">=8.40.0"
+		"eslint": ">=9.0.0"
 	},
 	"publishConfig": {
 		"access": "public",
